@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>QuickAid - First Aid Guide</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>QuickAid</h1>
+    <p>Your Emergency First-Aid Assistant</p>
+  </header>
+
+  <main>
+    <section id="menu">
+      <h2>Select an Emergency</h2>
+      <button onclick="showGuide('bleeding')">Bleeding</button>
+      <button onclick="showGuide('burn')">Burn</button>
+      <button onclick="showGuide('choking')">Choking</button>
+      <button onclick="showGuide('unconscious')">Unconscious</button>
+    </section>
+
+    <section id="guide">
+      <h2>Instructions</h2>
+      <div id="steps"></div>
+    </section>
+
+    <section id="emergency">
+      <a href="tel:911" class="call-btn">Call Emergency</a>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 QuickAid</p>
+    <p><a href="https://docs.google.com/forms/d/e/1FAIpQLSfha23GRSG0hZSwbxiYSE2q8sbakFgtnyOXSTa2fQNkb2iTiA/viewform?usp=header" target="_blank" rel="noopener noreferrer" class="feedback-link">Feedback</a></p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
